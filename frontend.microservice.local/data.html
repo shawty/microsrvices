@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Microservices Example | Frontend</title>
+    <link href="styles/bootstrap.css" type="text/css" rel="stylesheet" />
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-default navbar-inverse" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Microservices Example | Frontend</a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="active dropdown">
+              <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Home <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/data.html">Data Test</a></li>
+              </ul>
+            </li>
+
+            <li><a href="/module1/">Module 1</a></li>
+            <li><a href="/module2/">Module 2</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="page-header">
+          <h1>Data <small>The place where all the data lives</small>
+          </h1>
+        </div>
+
+        <p class="lead">Below is a table containing some data, this data came from a 3rd module.
+        </p>
+
+        <p>The 3rd module is not listed in the menu for the page as it contains no browsable pages, it simply provides a WEB-API
+        JSON endpoint that delivers data for your application.
+        </p>
+
+        <div id="directoryList">
+
+          <div class="alert alert-danger" role="alert" data-bind="visible: showAlert">
+            <p>
+              It appears you have no phone numbers in the phone book
+            </p>
+          </div>
+
+          <table class="table table-bordered table-condensed">
+
+            <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Number to dial</th>
+            </tr>
+            </thead>
+            <tbody data-bind="foreach: phoneDirectory">
+            <tr>
+              <td data-bind="text: Pkid">xx</td>
+              <td data-bind="text: Name">xx</td>
+              <td data-bind="text: TelephoneNumber">xx</td>
+            </tr>
+            </tbody>
+
+          </table>
+
+        </div>
+
+      </div>
+    </div>
+
+    <script src="scripts/jquery-2.1.1.js"></script>
+    <script src="scripts/bootstrap.js"></script>
+    <script src="scripts/knockout-3.2.0.js"></script>
+    <script src="scripts/knockout.mapping-latest.js"></script>
+    <script src="scripts/App/Data.js" type="text/javascript"></script>
+  </body>
+
+</html>

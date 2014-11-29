@@ -1,0 +1,27 @@
+﻿@{
+  ViewBag.Title = "Home";
+}
+
+<header class="page-header">
+  <h2>Module 2 <small>A simple module that displays data in a razor page</small></h2>
+</header>
+
+<p class="lead">
+  Below is a list of data, like module 1 it's nothing ground breaking it works exactly like vanilla MVC.
+</p>
+
+<p>
+  If you click on the persons name however, you'll get a details page, demonstrating the use of razor
+  view helpers to generate correct restful page links
+</p>
+
+<ul>
+  @foreach (var p in Model)
+  {
+    <li>
+      <a href="detail/@p.Pkid" title="Click me to see record details">
+        <h3>@p.Name</h3>
+      </a>
+    </li>
+  }
+</ul>

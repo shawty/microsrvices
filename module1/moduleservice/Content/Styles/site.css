@@ -1,0 +1,14 @@
+﻿body {
+    padding-top: 0;
+    padding-bottom: 20px;
+}
+
+.footerText
+{
+  font-size: 0.8em;
+  color: silver;
+  border-top: 1px solid lightgrey;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+

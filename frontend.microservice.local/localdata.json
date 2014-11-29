@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Pkid": 1,
+    "Name": "Local Data 1",
+    "TelephoneNumber": "01234567890"
+  },
+  {
+    "Pkid": 2,
+    "Name": "Local Data 2",
+    "TelephoneNumber": "01234567890"
+  },
+  {
+    "Pkid": 3,
+    "Name": "Local Data 3",
+    "TelephoneNumber": "01234567890"
+  },
+  {
+    "Pkid": 4,
+    "Name": "Local Data 4",
+    "TelephoneNumber": "01234567890"
+  }
+]

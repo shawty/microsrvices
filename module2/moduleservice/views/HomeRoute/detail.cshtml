@@ -1,0 +1,22 @@
+﻿@using moduleservice
+@{
+  ViewBag.Title = "Details";
+}
+
+<header class="page-header">
+  <h2>Module 2 <small>A simple module that displays data in a razor page</small></h2>
+</header>
+
+<p class="lead">
+  Below is the detailed information for record number @Model.
+</p>
+
+<div class="panel panel-info">
+  <div class="panel-heading">@Model.Name</div>
+  <div class="panel-body">
+    <div>Record Id : <span class="text-info">@Model.Pkid</span></div>
+    <div>Email Address : <span class="text-info">@Model.EMail</span></div>
+  </div>
+</div>
+
+<a href="@Html.PathCombiner((string)ViewBag.RelativeBase, string.Empty)" class="btn btn-primary">Return To List</a>
